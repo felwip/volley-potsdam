@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import {Table, CourtImages} from "./components/table";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="text-gray-900 bg-gray-300 font-sans-serif">
+      {/* <header className="App-header">
+        <h1 className="text-3xl font-bold underline">Hello Volley Potsdam!</h1>
+      </header> */}
+      {/* <body> */}
+      <CourtImages />
+      <Table />
+      {/* </body> */}
     </div>
   );
 }
