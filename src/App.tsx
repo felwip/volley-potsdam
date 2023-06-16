@@ -1,6 +1,9 @@
-import React from "react";
+import 'devextreme/dist/css/dx.light.css';
+import React, {useMemo, useState, useEffect} from "react";
 
+import ReactTable from "./components/reactTable";
 import {Table, CourtImages} from "./components/table";
+import {Table2} from "./components/table2";
 
 function App() {
   return (
@@ -10,7 +13,9 @@ function App() {
       </header> */}
       {/* <body> */}
       <CourtImages />
-      <Table />
+      {/* <Table /> */}
+      {/* <Table2 /> */}
+      <ReactTable />
       {/* </body> */}
     </div>
   );
