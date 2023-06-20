@@ -182,3 +182,5 @@ export const priorityData = [
     color: "#ff9747",
   },
 ];
+
+export const appointments = [{}];
