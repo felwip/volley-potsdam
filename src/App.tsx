@@ -1,8 +1,7 @@
-import "devextreme/dist/css/dx.light.css";
-import Button from "devextreme-react/button";
-import Header from "./components/header";
-
 import ExtremeScheduler from "./components/extremeScheduler";
+import Button from "devextreme-react/button";
+
+import Header from "./components/header";
 
 function App() {
   const sayHelloWorld = () => {

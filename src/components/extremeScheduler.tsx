@@ -1,4 +1,6 @@
 import {Scheduler, View} from "devextreme-react/scheduler";
+import "devextreme/dist/css/dx.light.css";
+
 import {appointments} from "../data/data";
 
 export default function ExtremeScheduler() {

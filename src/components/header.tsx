@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {Dialog} from "@headlessui/react";
-// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -27,7 +27,6 @@ export default function Header() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Volleyball in Potsdam</span>
               <FontAwesomeIcon icon={faVolleyball} className="text-white" />
             </a>
           </div>
@@ -40,12 +39,12 @@ export default function Header() {
               <FontAwesomeIcon icon={faBars} />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex ">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6"
+                className="px-6 text-sm font-semibold leading-6 hover:drop-shadow-xl"
                 style={{color: "white"}}
               >
                 {item.name}
@@ -60,23 +59,19 @@ export default function Header() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel
-            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-            style={{color: "Tan"}}
-          >
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5 h-8 w-auto">
                 <FontAwesomeIcon icon={faVolleyball} />
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <FontAwesomeIcon
                   icon={faRectangleXmark}
-                  className="h-6 w-auto"
-                  style={{color: "Tan"}}
+                  className="h-6 w-auto "
                 />
               </button>
             </div>
@@ -88,7 +83,6 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      style={{color: "Tan"}}
                     >
                       {item.name}
                     </a>
@@ -103,13 +97,16 @@ export default function Header() {
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Play Volleyball in Potsdam
+            <h1 className="text-4xl font-bold text-white sm:text-6xl">
+              Play Now!
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white">
-              Get a capacity overview. Schedule a court with friends. Meet other
-              Teams. Start friendlies.
-            </p>
+            <h1 className="text-4xl font-bold text-white sm:text-6xl">
+              Beach Volleyball Potsdam
+            </h1>
+            <h2 className="mt-6 text-lg leading-8 text-white bg-violet-500 opacity-80 rounded">
+              See capacities - Schedule a court - Meet your friends - Find other
+              Teams - Start playing
+            </h2>
           </div>
         </div>
         <div
