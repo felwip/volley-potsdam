@@ -1,15 +1,25 @@
-export const courtList: Record<string, string>[] = [
+export const courtList: Record<string, any>[] = [
   {
     id: "1",
-    name: "Platz 1",
-    description: "Westkurve",
+    name: "Westkurve",
+    description: {
+      equipment: "Netz (Metall) vorhanden geringer Durchhang, nicht spannbar",
+      playerLevel: "Einsteiger / Fortgeschrittene",
+      facilities: "WC vorhanden + angrenzender Sportplatz und Spielplatz",
+    },
     imgSrc:
       "https://images.unsplash.com/photo-1611588849922-f5b78aeacce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
   },
   {
     id: "2",
-    name: "Platz 2",
-    description: "Waschhaus",
+    name: "Schiffbauergasse",
+    description: {
+      equipment:
+        "Netz vorhanden, geringer Durchhang, nicht spannbar; keine Linien vorhanden, keine Antennen",
+      playerLevel: "Einsteiger / Fortgeschrittene",
+      facilities:
+        "liegt direkt an der Havel und einem Radweg; Cafés / WC etc. vorhanden; angrenzender Spielplatz",
+    },
     imgSrc:
       "https://images.unsplash.com/photo-1519046947096-f43d6481532b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   },

@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = [
-  {name: "Courts", href: "#"},
+  {name: "Courts", href: "/courtList"},
   {name: "Events", href: "#"},
   {name: "About", href: "#"},
   {name: "Other Sports", href: "#"},
